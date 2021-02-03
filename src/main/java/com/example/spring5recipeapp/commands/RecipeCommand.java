@@ -34,7 +34,7 @@ public class RecipeCommand {
     private Integer servings;
     private String source;
 
-    @URL
+//    @URL
     private String url;
     @NotBlank
     private String directions;
