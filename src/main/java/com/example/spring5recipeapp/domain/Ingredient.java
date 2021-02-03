@@ -24,16 +24,16 @@ public class Ingredient {
     private Recipe recipe;
 
     @OneToOne(fetch = FetchType.EAGER)
-    private UnitOfMeasure unitMeasure;
+    private UnitOfMeasure uom;
 
     public Ingredient() {
     }
 
 
-    public Ingredient(String description, BigDecimal amount, UnitOfMeasure unitMeasure,  Recipe recipe) {
+    public Ingredient(String description, BigDecimal amount, UnitOfMeasure uom, Recipe recipe) {
         this.description = description;
         this.amount = amount;
         this.recipe = recipe;
-        this.unitMeasure = unitMeasure;
+        this.uom = uom;
     }
 }

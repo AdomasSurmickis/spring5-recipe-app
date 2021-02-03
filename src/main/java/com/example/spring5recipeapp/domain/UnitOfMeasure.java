@@ -14,7 +14,7 @@ import javax.persistence.Id;
 public class UnitOfMeasure {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Long id;
     private String description;
 
 
